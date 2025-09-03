@@ -1,0 +1,36 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2e8b57;
+    padding: 10px 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.busqueda {
+    flex: 1;
+}
+
+.busqueda input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+.busqueda input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(46, 139, 87, 0.5);
+}
+nav a:hover {
+    color: #1a5e3a;
+}
+nav a.active {
+    text-decoration: underline;
+}
+

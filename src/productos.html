@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos </title>
+    <link rel="icon" type="image/png" href="img/icono.png">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <script src="/src/script/modal.js" defer></script>
+    <script src="/src/script/busqueda.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <h1>Catálogo de Productos</h1>
+    </header>
+
+     <nav>
+     <div class="busqueda">
+        <input type="text" id="buscar" placeholder="Buscar producto...">
+     </div>
+     <a href="index.html">Inicio</a>
+     <a href="#">Productos</a>
+      <a href="#contacto">Contacto</a>
+     </nav>
+
+
+    <section class="productos">
+        <div class="producto">
+           <img src="img/ibuprofeno.png" alt="Ibuprofeno">
+           <h3>Ibuprofeno 400mg</h3>
+           <p>Medicamento antiinflamatorio y analgésico.</p>
+           <h4 class="precio">Precio</h4>
+           <p class="precio">$12.000</p>
+           <button onclick="abrirModal('modal1')" class="btn-ver">Ver más</button>
+        </div>
+
+
+        <div class="producto" onclick="abrirModal('modal2')">
+            <img src="img/paracetamol.jpeg" alt="Paracetamol">
+            <h3>Paracetamol 500mg</h3>
+            <p>Alivia el dolor y reduce la fiebre.</p>
+            <h4 class="precio">Precio</h4>
+            <p class="precio">$8.000</p>
+            <button onclick="abrirModal('modal2')" class="btn-ver">Ver más</button>
+        </div>
+
+        <div class="producto" onclick="abrirModal('modal3')">
+            <img src="img/vitamina c.png" alt="Vitamina C">
+            <h3>Vitamina C 1000mg</h3>
+            <p>Refuerza el sistema inmunológico.</p>
+            <h4 class="precio">Precio</h4>
+            <p class="precio">$15.000</p>
+            <button onclick="abrirModal('modal3')" class="btn-ver">Ver más</button>
+        </div>
+
+        <div class="producto" onclick="abrirModal('modal4')">
+           <img src="img/omeprazol.png" alt="Omeprazol">
+           <h3>Omeprazol 20mg</h3>
+           <p>Protector gástrico para el estómago.</p>
+           <h4 class="precio">Precio</h4>
+           <p class="precio">$10.000</p>
+           <button onclick="abrirModal('modal4')" class="btn-ver">Ver más</button>
+        </div>
+    </section>   
+
+    <!-- MODALES -->
+    <div id="modal1" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal1')">&times;</span>
+            <h2>Ibuprofeno 400mg</h2>
+            <p>Medicamento antiinflamatorio no esteroideo que ayuda a reducir la fiebre, el dolor y la inflamación.</p>
+            <p><b>Presentación:</b> Caja con 20 tabletas</p>
+            <p><b>Precio:</b> $12.000</p>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal2')">&times;</span>
+            <h2>Paracetamol 500mg</h2>
+            <p>Analgésico eficaz contra dolores leves y moderados, también ayuda a reducir la fiebre.</p>
+            <p><b>Presentación:</b> Caja con 24 tabletas</p>
+            <p><b>Precio:</b> $8.000</p>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal3')">&times;</span>
+            <h2>Vitamina C 1000mg</h2>
+            <p>Suplemento para fortalecer el sistema inmunológico y aumentar la energía.</p>
+            <p><b>Presentación:</b> Frasco con 30 tabletas efervescentes</p>
+            <p><b>Precio:</b> $15.000</p>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal('modal4')">&times;</span>
+            <h2>Omeprazol 20mg</h2>
+            <p>Protector gástrico usado para tratar reflujo ácido y problemas de acidez estomacal.</p>
+            <p><b>Presentación:</b> Caja con 14 cápsulas</p>
+            <p><b>Precio:</b> $10.000</p>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <div class="footer-contacto">
+            <h3>Contáctanos</h3>
+            <p>Tel: +57 300 123 4567</p>
+            <p>Email: contacto@farmaciasalud.com</p>
+            <p>Dirección: Calle 123 #45-67, Barranquilla</p>
+        </div>
+        <p>&copy; 2025 Farmacia Salud+. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
